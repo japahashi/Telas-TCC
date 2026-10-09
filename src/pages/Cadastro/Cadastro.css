@@ -1,0 +1,248 @@
+.cadastro {
+    width: 100%;
+    height: 100vh;
+    padding: 2vh 1.5vw;
+    background-color: #dfded2;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.cadastro-inner {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    border-radius: 1.5vw;
+    overflow: hidden;
+}
+
+.cadastro-hero {
+    flex: 1.3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 6vh 6vw;
+    box-sizing: border-box;
+    color: #374438;
+    z-index: 0;
+}
+
+.cadastro-hero-image {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.cadastro-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(22, 36, 26, 0.35) 0%, rgba(22, 36, 26, 0) 25%, rgba(22, 36, 26, 0) 55%, rgba(22, 36, 26, 0.55) 100%);
+    z-index: 1;
+}
+
+.cadastro-hero-brand {
+    position: relative;
+    z-index: 2;
+    display: flex;
+}
+
+.cadastro-hero-title {
+    position: relative;
+    z-index: 2;
+}
+
+.cadastro-hero-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6vw;
+}
+
+.cadastro-hero-brand-letter img {
+    width: 3vw;
+    height: 3vw;
+}
+
+.cadastro-hero-brand-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.1;
+    color: #374438;
+    font-weight: bold;
+}
+
+.cadastro-hero-brand-text strong {
+    font-family: var(--font-family);
+    font-size: 1.5vw;
+}
+
+.cadastro-hero-brand-text span {
+    font-size: 0.9vw;
+    letter-spacing: 0.4px;
+}
+
+.cadastro-hero-title {
+    font-family: var(--font-family);
+    font-size: 1.8vw;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0;
+    color: #112D2B;
+    display: flex;
+    height: 80vh;
+    width: 30vw;
+}
+
+.cadastro-panel {
+    flex: 1;
+    background: var(--color-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3vh 15vw;
+    box-sizing: border-box;
+}
+
+.cadastro-card {
+    width: 35vw;
+    height: 75vh;
+    background: #f4f5ec;
+    border: 1px solid var(--color-border);
+    border-radius: 1.2vw;
+    padding: 2.2vh 1.8vw;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    z-index: 1;
+}
+
+.cadastro-card-eyebrow {
+    display: flex;
+    font-family: var(--font-family);
+    font-size: 1.2vw;
+    font-weight: bolder;
+    gap: 1vw;
+    align-items: center;
+    justify-content: center;
+    width: 12vw;
+
+}
+
+.cadastro-card-eyebrow-line {
+    display: flex;
+    flex: 1;
+    height: 2px;
+    background: #BAB9AC;
+}
+
+.cadastro-card-title {
+    font-family: var(--font-family);
+    font-size: 1.7vw;
+    font-weight: 700;
+    color: var(--color-text);
+    margin: 0;
+    z-index: 1;
+}
+
+.cadastro-card-subtitle {
+    font-family: var(--font-family);
+    color: #7E9897;
+    margin: 0 0 0.6vh;
+    z-index: 1;
+    width: 26vw;
+    height: 3vh;
+    font-size: 1.2vw;
+    font-weight: bolder;
+}
+
+.cadastro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vh;
+    z-index: 1;
+    align-items: center;
+}
+
+.cadastro-steps {
+    display: flex;
+    justify-content: space-between;
+    width: 27vw;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2vw;
+    font-weight: bold;
+}
+
+.cadastro-steps div {
+    display: flex;
+    width: 2vw;
+    height: 4vh;
+    border-radius: 0.5vw;
+    background-color: #112D2B;
+    color: white;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2vw;
+}
+
+.cadastro-input-nome {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    font-size: 0.9vw;
+    gap: 1.5vh;
+}
+
+.cadastro-input-nome input {
+    display: flex;
+    height: 5.4vh;
+    border-radius: 0.7vw;
+    background-color: #F2F2EA;
+    border: transparent;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    font-size: 2vh;
+    width: 30vw;
+    font-weight: bolder;
+}
+
+.cadastro-input-email-cargo {
+    display: flex;
+    font-weight: bold;
+    font-size: 0.9vw;
+    gap: 1.5vh;
+    height: 42vh;
+    align-items: center;
+}
+
+.cadastro-input-email-cargo input {
+    display: flex;
+    height: 5.4vh;
+    border-radius: 0.7vw;
+    background-color: #F2F2EA;
+    border: transparent;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+    font-size: 2vh;
+    width: 30vw;
+    font-weight: bolder;
+}
+
+.cadastro-submit {
+    display: flex;
+    color: #2C4035;
+    height: 20vh;
+    justify-content: center;
+}
+
+.cadastro-submit .bloom-button {
+    display: flex;
+    width: 31vw;
+    height: 6.5vh;
+    justify-content: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    font-size: 1.4vw;
+}
