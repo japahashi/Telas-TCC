@@ -1,0 +1,28 @@
+:root {
+  --color-bg: #f3efe2;
+  --color-surface: #ffffff;
+  --color-sidebar: #1e2b21;
+  --color-sidebar-icon: #c9d3c8;
+  --color-sidebar-icon-active: #ffffff;
+  --color-sidebar-active-bg: #35473a;
+  --color-primary: #2f4a34;
+  --color-primary-dark: #1e2f23;
+  --color-border: #e3ddc9;
+  --color-text: #202d1e;
+  --color-text-muted: #6f7a68;
+  --color-good-bg: #e2f2df;
+  --color-good-text: #2f7a3c;
+  --color-warning-bg: #fdeecb;
+  --color-warning-text: #a7711a;
+  --color-alert-bg: #fbdede;
+  --color-alert-text: #b23b3b;
+  --color-info-bg: #e4e9f5;
+  --color-info-text: #3c5aa6;
+  --color-neutral-bg: #edeae0;
+  --color-neutral-text: #55604f;
+  --radius-sm: 0.45vw;
+  --radius-md: 0.7vw;
+  --radius-lg: 1.1vw;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.06);
+  --font-family: "Alice", serif;
+}

@@ -1,0 +1,60 @@
+.bloom-list-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8vw;
+  background: var(--color-surface);
+  border: 0.06vw solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 0.9vh 0.9vw;
+  font-family: var(--font-family);
+  flex-shrink: 0;
+  box-sizing: border-box;
+}
+
+.bloom-list-item.is-clickable {
+  cursor: pointer;
+}
+
+.bloom-list-item-icon {
+  background: var(--color-neutral-bg);
+  border-radius: 50%;
+}
+
+.bloom-list-item-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+.bloom-list-item-title {
+  font-size: 0.85vw;
+  font-weight: 600;
+  color: var(--color-text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloom-list-item-subtitle {
+  font-size: 0.7vw;
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bloom-list-item-meta {
+  font-size: 0.7vw;
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+.bloom-list-item-trailing {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-size: 0.85vw;
+  font-weight: 600;
+  color: var(--color-text);
+}

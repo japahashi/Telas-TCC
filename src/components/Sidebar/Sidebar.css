@@ -1,0 +1,45 @@
+.bloom-sidebar {
+  width: 4.4vw;
+  background: var(--color-sidebar);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5vh;
+  padding: 2vh 0;
+  height: 100vh;
+  justify-content: space-around;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.bloom-sidebar-item {
+  width: 2.8vw;
+  height: 2.8vw;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--color-sidebar-icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.bloom-sidebar-item.is-active {
+  background: var(--color-sidebar-active-bg);
+  color: var(--color-sidebar-icon-active);
+}
+
+.bloom-sidebar-menu {
+  width: 2.4vw;
+  height: 2.4vw;
+  border-radius: var(--radius-md);
+  border: none;
+  background: transparent;
+  color: var(--color-sidebar-icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 0.5vh;
+}

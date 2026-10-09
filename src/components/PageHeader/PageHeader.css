@@ -1,0 +1,28 @@
+.bloom-page-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 18px 22px;
+  font-family: var(--font-family);
+}
+
+.bloom-page-header h1 {
+  font-size: 20px;
+  margin: 0 0 4px;
+  color: var(--color-text);
+}
+
+.bloom-page-header p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
+
+.bloom-page-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}

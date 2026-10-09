@@ -1,0 +1,38 @@
+.bloom-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: opacity 0.15s ease;
+}
+
+.bloom-button:hover {
+  opacity: 0.9;
+}
+
+.bloom-button-primary {
+  background: var(--color-primary);
+  color: #ffffff;
+}
+
+.bloom-button-secondary {
+  background: var(--color-neutral-bg);
+  color: var(--color-text);
+}
+
+.bloom-button-outline {
+  background: transparent;
+  color: var(--color-text);
+  border-color: var(--color-border);
+}
+
+.bloom-button-ghost {
+  background: transparent;
+  color: var(--color-text);
+}

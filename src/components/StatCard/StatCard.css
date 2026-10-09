@@ -1,0 +1,44 @@
+.bloom-stat-card {
+  background: var(--color-surface);
+  border: 0.06vw solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 1.4vh 1.2vw;
+  font-family: var(--font-family);
+  display: flex;
+  flex-direction: column;
+  gap: 0.8vh;
+  box-sizing: border-box;
+  min-width: 0;
+}
+
+.bloom-stat-card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.bloom-stat-card-label {
+  font-size: 0.8vw;
+  color: var(--color-text-muted);
+  flex: 1;
+}
+
+.bloom-stat-card-value {
+  font-size: 1.6vw;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.bloom-stat-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bloom-stat-card-trend {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+  font-size: 0.75vw;
+  color: var(--color-good-text);
+}

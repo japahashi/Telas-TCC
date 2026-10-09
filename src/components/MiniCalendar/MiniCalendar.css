@@ -1,0 +1,154 @@
+.bloom-mini-calendar {
+  width: 320px;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  font-family: var(--font-family);
+}
+
+.bloom-mini-calendar-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.bloom-mini-calendar-title h2 {
+  margin: 0;
+  font-size: 22px;
+  color: var(--color-primary-dark);
+}
+
+.bloom-mini-calendar-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0 auto 16px;
+  padding: 8px 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.bloom-mini-calendar-nav button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.bloom-mini-calendar-prev {
+  transform: rotate(180deg);
+}
+
+.bloom-mini-calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  text-align: center;
+}
+
+.bloom-mini-calendar-weekday {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+  padding-bottom: 6px;
+}
+
+.bloom-mini-calendar-day {
+  position: relative;
+  border: none;
+  background: transparent;
+  border-radius: 999px;
+  height: 30px;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.bloom-mini-calendar-day.is-other-month {
+  color: #8aa39a;
+}
+
+.bloom-mini-calendar-day.is-today {
+  background: var(--color-primary-dark);
+  color: #ffffff;
+}
+
+.bloom-mini-calendar-day.is-selected {
+  background: #8fae9a;
+  color: #ffffff;
+}
+
+.bloom-mini-calendar-dot {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  margin-left: -2px;
+  border-radius: 999px;
+  background: var(--color-primary-dark);
+}
+
+.bloom-mini-calendar-events {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--color-border);
+}
+
+.bloom-mini-calendar-events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.bloom-mini-calendar-events-header h3 {
+  margin: 0;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.bloom-mini-calendar-events-header span {
+  font-size: 11px;
+  font-weight: 700;
+  color: #6f9a8a;
+}
+
+.bloom-mini-calendar-event {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.bloom-mini-calendar-event-time {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.bloom-mini-calendar-event-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  flex: 1;
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.bloom-mini-calendar-event-tag {
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  padding: 1px 10px;
+  font-size: 11px;
+  background: var(--color-surface);
+}

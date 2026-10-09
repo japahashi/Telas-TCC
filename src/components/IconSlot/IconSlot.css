@@ -1,0 +1,30 @@
+.icon-slot {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.icon-slot img,
+.icon-slot svg {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.icon-slot-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed var(--color-text-muted);
+  border-radius: 4px;
+  font-size: 7px;
+  line-height: 1;
+  text-align: center;
+  color: var(--color-text-muted);
+  padding: 1px;
+  overflow: hidden;
+}

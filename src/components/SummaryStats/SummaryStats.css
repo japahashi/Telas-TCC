@@ -1,0 +1,27 @@
+.bloom-summary-stats {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.bloom-summary-stat {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 10px 16px;
+  font-family: var(--font-family);
+}
+
+.bloom-summary-stat-value {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--color-text);
+}
+
+.bloom-summary-stat-label {
+  font-size: 13px;
+  color: var(--color-text-muted);
+}
